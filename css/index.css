@@ -144,8 +144,10 @@ a {
 
 .rectangle{
     display: block;
-    width: 1000%;
+    width: 80%;
     align-items: center;
+    margin: 0 auto;
+
 }
 
 .top-content {
