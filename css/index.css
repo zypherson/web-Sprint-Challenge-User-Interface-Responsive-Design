@@ -299,6 +299,15 @@ footer {
     align-items: center;
 }
 
+.about-container{
+    width:85%;
+    margin: 0 auto;
+    
+
+}
+
+
+
 .row{
     display: flex;
     justify-content: space-around;
@@ -349,7 +358,7 @@ footer {
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 60%;
 }
 .footerlinks{
     display: flex;
@@ -359,12 +368,18 @@ footer {
 .row{
     display: flex;
     flex-direction: column;
+    margin: 0;
     
     
 }
 .container{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-container{
     margin: 0 auto;
     width: 100%;
 }
