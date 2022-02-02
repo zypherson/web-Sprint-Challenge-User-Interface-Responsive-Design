@@ -183,12 +183,13 @@ a {
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
+    border-bottom: 2px solid #ff4b00;
     
     
 }
 
 .flexItem{
-    margin: 1%;
+    margin: 2%;
 }
 
 .boxOne{
@@ -290,6 +291,7 @@ footer {
 #about {
     display: flex;
     justify-content: center;
+    
 }
 .aboutpic{
     display: block;
@@ -302,10 +304,12 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     padding: 100px;
+    border-bottom: 2px solid #ff4b00;
 }
 .container{
     text-align: center;
     padding: 20px;
+    
 }
 .footerlinks{
     width: 85%;
@@ -360,6 +364,7 @@ footer {
 }
 .container{
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 100%;
 }
