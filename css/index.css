@@ -48,7 +48,10 @@ table {
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
+  padding:0;
+  margin:0;
+  max-width:100%;
 }
 
 html{
@@ -66,8 +69,14 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
-section, footer{
+section{
     padding:4% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+footer{
+    width: 100%;
+    margin: auto;
 }
 .container {
     width: 80%;
@@ -103,6 +112,7 @@ section{
 nav{
     display: flex;
     justify-content: space-between;
+    padding: 2% 0;
     
     
 }
@@ -114,17 +124,28 @@ nav{
   justify-content: space-evenly;
   
 }
+.footerlinks{
+    width: 85%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
 a {
     text-decoration: none;
     letter-spacing: 3px;
     color: black;
     font-family: "PT Sans", sans-serif;
-  
+   text-decoration: none;
+    
 }
-.fpi{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+
+
+.rectangle{
+    display: block;
+    width: 1000%;
+    align-items: center;
 }
 
 .top-content {
@@ -143,6 +164,8 @@ a {
 }
 
 /*Middle Section Styles*/
+
+
 .middle-content {
     margin-bottom: 4%;
 }
@@ -151,35 +174,84 @@ a {
     margin-bottom: 0;
 }
 
-.middle-content .boxes, .boxes2{
+.flexContainer {
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: row; 
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-.middle-content .boxes .box{
-    background: teal;
-    margin: 4% 0;
-    color: white;
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-.middle-content .boxes2 .box {
-    background:black;
-    margin: 4% 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
 }
 
-.box{
-    width:120px;
-    height: 120px;
+.flexItem{
+    margin: 1%;
 }
+
+.boxOne{
+    background-color:teal;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxTwo{
+    background-color: gold;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxThree{
+    background-color: cadetblue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxFour{
+    background-color:coral;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxFive{
+    background-color:crimson;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxSix{
+    background-color:forestgreen;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxSeven{
+    background-color:darkorchid;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxEight{
+    background-color:hotpink;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxNine{
+    background-color:indigo;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .boxTen{
+    background-color:dodgerblue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+    
+
+
 
 
 
@@ -203,12 +275,12 @@ a {
 
 /*Footer Styles*/
 footer {
-    flex-grow: 1;
+    
     padding: 70px;
     width: 100%;
     height: 200%;
     background-color: #ff4b00;
-    margin: 50px;
+    
     
 }
 
@@ -217,6 +289,87 @@ footer {
     display: flex;
     justify-content: center;
 }
+.aboutpic{
+    display: block;
+    width: 1000%;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 100px;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+}
+.footerlinks{
+    width: 85%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
 
 
 /*Responsive Styles*/
+
+@media(max-width: 500px){
+.top-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexItem{
+    width: 40%;
+}
+
+.bottom-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-content .text-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+.footerlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+.bottomsec{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+}
+
+
+
